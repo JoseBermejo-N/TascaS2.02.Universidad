@@ -6,35 +6,35 @@
 
 ## ✅ Query 1: Correcto
 
-⏱ Tiempo: 0.35 ms
+⏱ Tiempo: 0.52 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 2: Correcto
 
-⏱ Tiempo: 0.20 ms
+⏱ Tiempo: 0.42 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 3: Correcto
 
-⏱ Tiempo: 0.19 ms
+⏱ Tiempo: 0.44 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 4: Correcto
 
-⏱ Tiempo: 0.16 ms
+⏱ Tiempo: 0.41 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 5: Correcto
 
-⏱ Tiempo: 0.21 ms
+⏱ Tiempo: 0.44 ms
 ✅ Se usó índice(s) en la consulta: id_grado
 
 ---
@@ -43,36 +43,15 @@
 ```diff
 --- 
 +++ 
-@@ -1,13 +1,13 @@
+@@ -1,4 +1,4 @@
 -apellido1 | apellido2 | nombre | departamento
--Fahey | Considine | Antonio | Economía y Empresa
--Hamill | Kozey | Manolo | Informática
--Kohler | Schoen | Alejandro | Matemáticas
--Lemke | Rutherford | Cristina | Economía y Empresa
--Monahan | Murray | Micaela | Agronomía
--Ramirez | Gea | Zoe | Informática
--Ruecker | Upton | Guillermo | Educación
--Schmidt | Fisher | David | Matemáticas
--Schowalter | Muller | Francesca | Química y Física
--Spencer | Lakin | Esther | Educación
--Stiedemann | Morissette | Alfredo | Química y Física
--Streich | Hirthe | Carmen | Educación
-+nombre | apellido1 | apellido2 | nombre_departamento
-+Zoe | Ramirez | Gea | Informática
-+Manolo | Hamill | Kozey | Informática
-+David | Schmidt | Fisher | Matemáticas
-+Alejandro | Kohler | Schoen | Matemáticas
-+Cristina | Lemke | Rutherford | Economía y Empresa
-+Antonio | Fahey | Considine | Economía y Empresa
-+Esther | Spencer | Lakin | Educación
-+Carmen | Streich | Hirthe | Educación
-+Guillermo | Ruecker | Upton | Educación
-+Micaela | Monahan | Murray | Agronomía
-+Alfredo | Stiedemann | Morissette | Química y Física
-+Francesca | Schowalter | Muller | Química y Física
++apellido1 | apellido2 | nombre | nombre_departamento
+ Fahey | Considine | Antonio | Economía y Empresa
+ Hamill | Kozey | Manolo | Informática
+ Kohler | Schoen | Alejandro | Matemáticas
 ```
 
-⏱ Tiempo: 0.25 ms
+⏱ Tiempo: 0.51 ms
 ✅ Se usó índice(s) en la consulta: PRIMARY, PRIMARY,id_departamento
 
 ---
