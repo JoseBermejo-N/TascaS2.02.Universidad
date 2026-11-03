@@ -126,7 +126,7 @@ HAVING total > 40;
 SELECT g.nombre AS grau, a.tipo AS tipus, SUM(a.creditos) AS total_creditos
 FROM asignatura a
 INNER JOIN grado g ON a.id_grado = g.id
-GROUP by g.id, g.nombre, a.tipo;
+GROUP by g.id, grau, tipus;
 
 -- 23. Retorna un llistat que mostri quants alumnes s'han matriculat d'alguna assignatura en cadascun dels cursos escolars. El resultat haurà de mostrar dues columnes, una columna amb l'any d'inici del curs escolar i una altra amb el nombre d'alumnes matriculats. (anyo_inicio, total)
 SELECT c.anyo_inicio, COUNT(DISTINCT am.id_alumno) AS total
