@@ -146,7 +146,8 @@ ORDER BY total DESC;
 SELECT * 
 FROM persona 
 WHERE tipo = 'alumno' 
-ORDER BY fecha_nacimiento DESC 
+ORDER BY fecha_nacimiento DESC
+LIMIT 1;
 
 -- 26. Retorna un llistat amb els professors/es que tenen un departament associat i que no imparteixen cap assignatura. (apellido1, apellido2, nombre)
 SELECT p.apellido1, p.apellido2, p.nombre
